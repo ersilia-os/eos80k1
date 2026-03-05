@@ -11,33 +11,28 @@ Description: The Bioactivity Similarity Index (BSI) is a machine learning model
   protein receptors regardless of their chemical scaffold.
 Deployment:
   - Local
-  - Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization,
-  Projection, Similarity search, Generation
+
+Source: Local
+Source Type: External
+Task: Representation
+Subtask: Featurization
 Input:
   - Compound
 Input Dimension: 1
 Output:
   - Value
-  - Score
-  - Compound
-  - Text
 Output Dimension: 64
-Output Consistency: Fixed, Variable
+Output Consistency: Fixed
 Interpretation: The output of this template model should be interpreted like 
   this.
 Tag:
-  - Bioactivity profile
+  - Embedding
+  - Descriptor
 Biomedical Area:
-  - Biomedical Area 1
-  - Biomedical Area 2
+  - Any
 Target Organism:
-  - Target Organism 1
-  - Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+  - Any
+Publication Type: Peer reviewed
 Publication Year: 2025
 Publication: 
   https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2025.1695353/full
