@@ -11,7 +11,6 @@ Description: The Bioactivity Similarity Index (BSI) is a machine learning model
   protein receptors regardless of their chemical scaffold.
 Deployment:
   - Local
-
 Source: Local
 Source Type: External
 Task: Representation
