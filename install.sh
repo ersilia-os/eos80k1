@@ -86,7 +86,7 @@ done < <(env)
 export CONDA_NO_PLUGINS=true
 conda activate "eos80k1"
 conda install -c pytorch pytorch=2.5.1 -y
-/home/marina/anaconda3/envs/eos80k1/bin/python -m pip install rdkit==2024.3.5
-/home/marina/anaconda3/envs/eos80k1/bin/python -m pip install numpy==1.24.4
 conda install -c conda-forge pandas=1.5.3 -y
 conda install -c conda-forge scikit-learn=1.4.2 -y
+/home/marina/anaconda3/envs/eos80k1/bin/python -m pip install rdkit==2024.3.5
+/home/marina/anaconda3/envs/eos80k1/bin/python -m pip install numpy==1.24.4

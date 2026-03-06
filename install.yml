@@ -1,7 +1,7 @@
 python: "3.10"
 commands:
     - ["conda", "pytorch", "2.5.1", "pytorch"]
-    - ["pip", "rdkit", "2024.3.5"]
-    - ["pip", "numpy", "1.24.4"]
     - ["conda", "pandas", "1.5.3", "conda-forge"]
     - ["conda", "scikit-learn", "1.4.2", "conda-forge"]
+    - ["pip", "rdkit", "2024.3.5"]
+    - ["pip", "numpy", "1.24.4"]
