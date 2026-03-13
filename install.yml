@@ -4,4 +4,4 @@ commands:
     - ["conda", "pandas", "1.5.3", "conda-forge"]
     - ["conda", "scikit-learn", "1.4.2", "conda-forge"]
     - ["pip", "rdkit", "2024.3.5"]
-    - ["pip", "numpy", "1.24.4"]
+    - ["pip", "numpy", "1.26.4"]
