@@ -4,4 +4,4 @@ commands:
     - ["pip", "torch", "2.5.0", "--index-url", "https://download.pytorch.org/whl/cpu"]
     - ["conda", "pandas", "1.5.3", "conda-forge"]
     - ["conda", "scikit-learn", "1.4.2", "conda-forge"]
-    - ["conda", "rdkit", "2024.03.5", "conda-forge"]
+    - ["pip", "rdkit", "2024.3.5"]
