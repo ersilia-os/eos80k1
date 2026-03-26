@@ -11,7 +11,7 @@ import json
 import numpy as np  
 import torch  
 from rdkit import Chem  
-from rdkit.Chem import AllChem  
+from rdkit.Chem import AllChem, rdFingerprintGenerator
 from src.model_training_functions import NeuralNetworkModel  
 
 # parse arguments
@@ -43,6 +43,7 @@ _model.eval()
 # embedding extractor: all layers except the final Linear(64->1) + Sigmoid
 _encoder = _model.model[:-2]
 EMBEDDING_DIM = hidden_layers[-1]  # 64
+_morgan_gen = rdFingerprintGenerator.GetMorganGenerator(radius=2, fpSize=fp_bits)
 
 
 # my model: takes a list of SMILES and returns BSI network embeddings (64-dim each)
@@ -54,7 +55,7 @@ def my_model(smiles_list):
             if mol is None:
                 results.append([float("nan")] * EMBEDDING_DIM)
                 continue
-            fp = AllChem.GetMorganFingerprintAsBitVect(mol, radius=2, nBits=fp_bits)
+            fp = _morgan_gen.GetFingerprintAsNumPy(mol)
             arr = np.array(fp, dtype=np.float32)
             x = torch.from_numpy(arr).unsqueeze(0)  # (1, fp_bits)
             emb = _encoder(x).squeeze(0).numpy()    # (EMBEDDING_DIM,)
