@@ -1,7 +1,7 @@
 python: "3.10"
 commands:
-    - ["conda", "numpy", "1.26.4", "conda-forge"]
-    - ["pip", "torch", "2.5.0", "--index-url", "https://download.pytorch.org/whl/cpu"]
+    - ["conda", "rdkit", "2024.3.5", "conda-forge"]
     - ["conda", "pandas", "1.5.3", "conda-forge"]
     - ["conda", "scikit-learn", "1.4.2", "conda-forge"]
-    - ["conda", "rdkit", "2024.3.5", "conda-forge"]
+    - ["pip", "numpy", "1.26.4"]
+    - ["pip", "torch", "2.5.0", "--index-url", "https://download.pytorch.org/whl/cpu"]
