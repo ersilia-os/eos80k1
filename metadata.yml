@@ -1,6 +1,6 @@
 Identifier: eos80k1
 Slug: bioactivity-similarity-index
-Status: In progress
+Status: Ready
 Title: Bioactivity Similarity Index
 Description: The Bioactivity Similarity Index (BSI) is a machine learning model 
   designed to identify functionally equivalent molecules that traditional 
@@ -39,6 +39,16 @@ Source Code: https://github.com/gschottlender/bioactivity-similarity-index
 License: MIT
 Contributor: Marina18
 Incorporation Date: '2026-03-03'
+Last Packaging Date: '2026-04-22'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos80k1.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos80k1
+Docker Architecture: AMD64
 Model Size: 3.0
 Environment Size: 1666.0
+Image Size: 1724.56
+Computational Performance 1: 37.05
+Computational Performance 2: 22.79
+Computational Performance 3: 24.88
+Computational Performance 4: 42.7
+Computational Performance 5: 123.27
