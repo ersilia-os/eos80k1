@@ -59,7 +59,7 @@ _10 of 64 columns are shown_
 
 ### References
 - **Source Code**: [https://github.com/gschottlender/bioactivity-similarity-index](https://github.com/gschottlender/bioactivity-similarity-index)
-- **Publication**: [https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2025.1695353/full](https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2025.1695353/full)
+- **Publication**: [https://doi.org/10.3389/fbinf.2025.1695353](https://doi.org/10.3389/fbinf.2025.1695353)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2025`
 - **Ersilia Contributor:** [Marina18](https://github.com/Marina18)
