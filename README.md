@@ -1,6 +1,6 @@
 # Bioactivity Similarity Index
 
-The Bioactivity Similarity Index (BSI) is a machine learning model designed to identify functionally equivalent molecules that traditional structural similarity metrics often miss. While standard tools like the Tanimoto Coefficient (TC) fail to recognize approximately 60% of similarly bioactive ligand pairs due to low structural overlap ($TC < 0.30$), BSI estimates the probability that two molecules bind to the same or related protein receptors regardless of their chemical scaffold.
+Encodes a molecule into 64 features intended to capture functional rather than structural resemblance, so that compounds acting alike are placed together even when their skeletons differ. The Bioactivity Similarity Index was built to address a known weakness of fingerprint-based comparison, where Tanimoto similarity misses functionally equivalent molecules that share no obvious substructures. Similarity in this space reflects predicted biological behaviour, so it complements rather than replaces structural comparison.
 
 This model was incorporated on 2026-03-03.Last packaged on 2026-04-22.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-03-03.Last packaged on 2026-04-22.
 ### Output
 - **Output Dimension:** `64`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** The output of this template model should be interpreted like this.
+- **Interpretation:** 64 features placing the molecule in a space organised by bioactivity rather than structure.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
