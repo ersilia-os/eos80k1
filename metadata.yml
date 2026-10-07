@@ -2,13 +2,12 @@ Identifier: eos80k1
 Slug: bioactivity-similarity-index
 Status: Ready
 Title: Bioactivity Similarity Index
-Description: Encodes a molecule into 64 features intended to capture functional rather
-  than structural resemblance, so that compounds acting alike are placed together
-  even when their skeletons differ. The Bioactivity Similarity Index was built to
-  address a known weakness of fingerprint-based comparison, where Tanimoto similarity
-  misses functionally equivalent molecules that share no obvious substructures. Similarity
-  in this space reflects predicted biological behaviour, so it complements rather
-  than replaces structural comparison.
+Description: Encodes a molecule as 64 values read from the hidden layer of the Bioactivity
+  Similarity Index, a network Schottlender and colleagues trained on ChEMBL to judge
+  whether two compounds bind the same or a related protein family. Their starting
+  point was that 60% of similarly bioactive ligand pairs sit below a Tanimoto coefficient
+  of 0.30 and so escape fingerprint comparison. Ersilia serves the cross-family BSI-Large
+  weights as a featuriser, so these numbers are a by-product of a pairwise classifier.
 Deployment:
   - Local
 Source: Local
